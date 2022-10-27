@@ -41,3 +41,7 @@ class LRUCache:
             lru = self.left.next
             self.remove(lru)
             del self.cache[lru.key]
+
+
+if __name__ == "__main__":
+    least = LRUCache(4)
